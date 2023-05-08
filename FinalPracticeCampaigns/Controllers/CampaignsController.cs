@@ -43,7 +43,7 @@ public class CampaignsController : ControllerBase
 
     [HttpDelete]
     [Route("{id}")]
-    public Campaigns Delete([FromRoute] int id)
+    public Campaigns Delete([FromRoute] string name, string type)
     {
         return _campaignManager.Delete();
     }
