@@ -19,9 +19,14 @@ public class CampaignManager
         return _campaigns;
     }
 
-    public Campaigns GetById()
+    public Campaigns GetByType(string type)
     {
-        return new Campaigns();
+        Campaigns campaignFound = _campaigns.Find(campaing => campaing.Type == type);
+        if(campaignFound==null)
+        {
+            throw new Exception("“Campaign not found");
+        }
+        return campaignFound;
     }
 
     public Campaigns Update()

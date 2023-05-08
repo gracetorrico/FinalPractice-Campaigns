@@ -22,10 +22,10 @@ public class CampaignsController : ControllerBase
     }
 
     [HttpGet]
-    [Route("{id}")]
-    public Campaigns GetById([FromRoute] int id)
+    [Route("{type}")]
+    public Campaigns GetByType([FromRoute] string type)
     {
-        return _campaignManager.GetById();
+        return _campaignManager.GetByType(type);
     }
 
     [HttpPut]
@@ -38,13 +38,13 @@ public class CampaignsController : ControllerBase
     [HttpPost]
     public Campaigns Post([FromBody] Campaigns campaignToCreate)
     {
-        return _campaignManager.Create(campaignToCreate.Name, campaignToCreateType, campaignToCreate.Description);
+        return _campaignManager.Create(campaignToCreate.Name, campaignToCreate.Type, campaignToCreate.Description);
     }
 
     [HttpDelete]
     [Route("{id}")]
     public Campaigns Delete([FromRoute] string name, string type)
     {
-        return _campaignManager.Delete();
+        return _campaignManager.Delete(name,type);
     }
 }

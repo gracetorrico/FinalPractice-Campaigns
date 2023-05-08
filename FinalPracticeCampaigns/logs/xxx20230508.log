@@ -30,3 +30,246 @@
 2023-05-08 09:21:16.639 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5277/swagger/v1/swagger.json - -
 2023-05-08 09:21:16.648 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5277/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 8.4805ms
 2023-05-08 09:21:20.377 -04:00 [INF] Application is shutting down...
+2023-05-08 19:15:04.243 -04:00 [INF] Now listening on: http://localhost:5277
+2023-05-08 19:15:04.271 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-08 19:15:04.272 -04:00 [INF] Hosting environment: Development
+2023-05-08 19:15:04.272 -04:00 [INF] Content root path: C:\Users\PCFACIL\Documents\FinalPractice-Campaigns\FinalPracticeCampaigns\
+2023-05-08 19:15:06.838 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5277/ - -
+2023-05-08 19:15:06.888 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5277/ - - - 404 0 - 51.1694ms
+2023-05-08 19:15:10.762 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5277/swagger - -
+2023-05-08 19:15:10.766 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5277/swagger - - - 301 0 - 4.8667ms
+2023-05-08 19:15:10.770 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5277/swagger/index.html - -
+2023-05-08 19:15:10.818 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5277/swagger/index.html - - - 200 - text/html;charset=utf-8 48.4699ms
+2023-05-08 19:15:10.837 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5277/swagger/swagger-ui.css - -
+2023-05-08 19:15:10.843 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5277/swagger/swagger-ui-bundle.js - -
+2023-05-08 19:15:10.844 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5277/swagger/swagger-ui-standalone-preset.js - -
+2023-05-08 19:15:10.860 -04:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2023-05-08 19:15:10.860 -04:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2023-05-08 19:15:10.860 -04:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2023-05-08 19:15:10.863 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5277/swagger/swagger-ui-bundle.js - - - 200 1061536 application/javascript 19.9200ms
+2023-05-08 19:15:10.863 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5277/swagger/swagger-ui.css - - - 200 144929 text/css 26.1816ms
+2023-05-08 19:15:10.863 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5277/swagger/swagger-ui-standalone-preset.js - - - 200 312163 application/javascript 19.2315ms
+2023-05-08 19:15:10.999 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5277/swagger/v1/swagger.json - -
+2023-05-08 19:15:11.020 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5277/swagger/favicon-32x32.png - -
+2023-05-08 19:15:11.021 -04:00 [INF] Sending file. Request path: '/favicon-32x32.png'. Physical path: 'N/A'
+2023-05-08 19:15:11.022 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5277/swagger/favicon-32x32.png - - - 200 628 image/png 1.9166ms
+2023-05-08 19:15:11.060 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5277/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 60.7083ms
+2023-05-08 19:15:45.753 -04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5277/campaigns application/json 91
+2023-05-08 19:15:45.756 -04:00 [INF] Executing endpoint 'FinalPracticeCampaigns.Controllers.CampaignsController.Post (FinalPracticeCampaigns)'
+2023-05-08 19:15:45.810 -04:00 [INF] Route matched with {action = "Post", controller = "Campaigns"}. Executing controller action with signature UPB.CoreLogic.Models.Campaigns Post(UPB.CoreLogic.Models.Campaigns) on controller FinalPracticeCampaigns.Controllers.CampaignsController (FinalPracticeCampaigns).
+2023-05-08 19:15:45.828 -04:00 [INF] Executing ObjectResult, writing value of type 'UPB.CoreLogic.Models.Campaigns'.
+2023-05-08 19:15:45.833 -04:00 [INF] Executed action FinalPracticeCampaigns.Controllers.CampaignsController.Post (FinalPracticeCampaigns) in 18.2252ms
+2023-05-08 19:15:45.835 -04:00 [INF] Executed endpoint 'FinalPracticeCampaigns.Controllers.CampaignsController.Post (FinalPracticeCampaigns)'
+2023-05-08 19:15:45.835 -04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5277/campaigns application/json 91 - 200 - application/json;+charset=utf-8 82.5214ms
+2023-05-08 19:15:53.582 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5277/campaigns - -
+2023-05-08 19:15:53.584 -04:00 [INF] Executing endpoint 'FinalPracticeCampaigns.Controllers.CampaignsController.Get (FinalPracticeCampaigns)'
+2023-05-08 19:15:53.586 -04:00 [INF] Route matched with {action = "Get", controller = "Campaigns"}. Executing controller action with signature System.Collections.Generic.List`1[UPB.CoreLogic.Models.Campaigns] Get() on controller FinalPracticeCampaigns.Controllers.CampaignsController (FinalPracticeCampaigns).
+2023-05-08 19:15:53.588 -04:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[UPB.CoreLogic.Models.Campaigns, CoreLogic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-05-08 19:15:53.589 -04:00 [INF] Executed action FinalPracticeCampaigns.Controllers.CampaignsController.Get (FinalPracticeCampaigns) in 1.5114ms
+2023-05-08 19:15:53.590 -04:00 [INF] Executed endpoint 'FinalPracticeCampaigns.Controllers.CampaignsController.Get (FinalPracticeCampaigns)'
+2023-05-08 19:15:53.590 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5277/campaigns - - - 200 - application/json;+charset=utf-8 8.0447ms
+2023-05-08 19:16:02.699 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5277/campaigns - -
+2023-05-08 19:16:02.700 -04:00 [INF] Executing endpoint 'FinalPracticeCampaigns.Controllers.CampaignsController.Get (FinalPracticeCampaigns)'
+2023-05-08 19:16:02.701 -04:00 [INF] Route matched with {action = "Get", controller = "Campaigns"}. Executing controller action with signature System.Collections.Generic.List`1[UPB.CoreLogic.Models.Campaigns] Get() on controller FinalPracticeCampaigns.Controllers.CampaignsController (FinalPracticeCampaigns).
+2023-05-08 19:16:02.702 -04:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[UPB.CoreLogic.Models.Campaigns, CoreLogic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-05-08 19:16:02.703 -04:00 [INF] Executed action FinalPracticeCampaigns.Controllers.CampaignsController.Get (FinalPracticeCampaigns) in 0.8848ms
+2023-05-08 19:16:02.704 -04:00 [INF] Executed endpoint 'FinalPracticeCampaigns.Controllers.CampaignsController.Get (FinalPracticeCampaigns)'
+2023-05-08 19:16:02.704 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5277/campaigns - - - 200 - application/json;+charset=utf-8 5.4351ms
+2023-05-08 19:16:27.226 -04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5277/campaigns application/json 96
+2023-05-08 19:16:27.227 -04:00 [INF] Executing endpoint 'FinalPracticeCampaigns.Controllers.CampaignsController.Post (FinalPracticeCampaigns)'
+2023-05-08 19:16:27.228 -04:00 [INF] Route matched with {action = "Post", controller = "Campaigns"}. Executing controller action with signature UPB.CoreLogic.Models.Campaigns Post(UPB.CoreLogic.Models.Campaigns) on controller FinalPracticeCampaigns.Controllers.CampaignsController (FinalPracticeCampaigns).
+2023-05-08 19:16:27.230 -04:00 [INF] Executing ObjectResult, writing value of type 'UPB.CoreLogic.Models.Campaigns'.
+2023-05-08 19:16:27.231 -04:00 [INF] Executed action FinalPracticeCampaigns.Controllers.CampaignsController.Post (FinalPracticeCampaigns) in 1.4072ms
+2023-05-08 19:16:27.231 -04:00 [INF] Executed endpoint 'FinalPracticeCampaigns.Controllers.CampaignsController.Post (FinalPracticeCampaigns)'
+2023-05-08 19:16:27.232 -04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5277/campaigns application/json 96 - 200 - application/json;+charset=utf-8 5.9706ms
+2023-05-08 19:16:35.728 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5277/campaigns - -
+2023-05-08 19:16:35.729 -04:00 [INF] Executing endpoint 'FinalPracticeCampaigns.Controllers.CampaignsController.Get (FinalPracticeCampaigns)'
+2023-05-08 19:16:35.730 -04:00 [INF] Route matched with {action = "Get", controller = "Campaigns"}. Executing controller action with signature System.Collections.Generic.List`1[UPB.CoreLogic.Models.Campaigns] Get() on controller FinalPracticeCampaigns.Controllers.CampaignsController (FinalPracticeCampaigns).
+2023-05-08 19:16:35.731 -04:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[UPB.CoreLogic.Models.Campaigns, CoreLogic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-05-08 19:16:35.732 -04:00 [INF] Executed action FinalPracticeCampaigns.Controllers.CampaignsController.Get (FinalPracticeCampaigns) in 0.9343ms
+2023-05-08 19:16:35.733 -04:00 [INF] Executed endpoint 'FinalPracticeCampaigns.Controllers.CampaignsController.Get (FinalPracticeCampaigns)'
+2023-05-08 19:16:35.734 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5277/campaigns - - - 200 - application/json;+charset=utf-8 5.7123ms
+2023-05-08 19:16:50.625 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5277/campaigns/{Type} - -
+2023-05-08 19:16:50.626 -04:00 [INF] Executing endpoint 'FinalPracticeCampaigns.Controllers.CampaignsController.GetByType (FinalPracticeCampaigns)'
+2023-05-08 19:16:50.628 -04:00 [INF] Route matched with {action = "GetByType", controller = "Campaigns"}. Executing controller action with signature UPB.CoreLogic.Models.Campaigns GetByType(System.String) on controller FinalPracticeCampaigns.Controllers.CampaignsController (FinalPracticeCampaigns).
+2023-05-08 19:16:50.630 -04:00 [INF] Executed action FinalPracticeCampaigns.Controllers.CampaignsController.GetByType (FinalPracticeCampaigns) in 1.2383ms
+2023-05-08 19:16:50.631 -04:00 [INF] Executed endpoint 'FinalPracticeCampaigns.Controllers.CampaignsController.GetByType (FinalPracticeCampaigns)'
+2023-05-08 19:16:50.632 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5277/campaigns/{Type} - - - 200 - text/json 6.7138ms
+2023-05-08 19:17:05.010 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5277/campaigns/{Type} - -
+2023-05-08 19:17:05.011 -04:00 [INF] Executing endpoint 'FinalPracticeCampaigns.Controllers.CampaignsController.GetByType (FinalPracticeCampaigns)'
+2023-05-08 19:17:05.011 -04:00 [INF] Route matched with {action = "GetByType", controller = "Campaigns"}. Executing controller action with signature UPB.CoreLogic.Models.Campaigns GetByType(System.String) on controller FinalPracticeCampaigns.Controllers.CampaignsController (FinalPracticeCampaigns).
+2023-05-08 19:17:05.013 -04:00 [INF] Executed action FinalPracticeCampaigns.Controllers.CampaignsController.GetByType (FinalPracticeCampaigns) in 0.3596ms
+2023-05-08 19:17:05.014 -04:00 [INF] Executed endpoint 'FinalPracticeCampaigns.Controllers.CampaignsController.GetByType (FinalPracticeCampaigns)'
+2023-05-08 19:17:05.014 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5277/campaigns/{Type} - - - 200 - text/json 4.8504ms
+2023-05-08 19:18:46.021 -04:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5277/campaigns/1?type=nav - -
+2023-05-08 19:18:46.022 -04:00 [INF] Executing endpoint 'FinalPracticeCampaigns.Controllers.CampaignsController.Delete (FinalPracticeCampaigns)'
+2023-05-08 19:18:46.023 -04:00 [INF] Route matched with {action = "Delete", controller = "Campaigns"}. Executing controller action with signature UPB.CoreLogic.Models.Campaigns Delete(System.String, System.String) on controller FinalPracticeCampaigns.Controllers.CampaignsController (FinalPracticeCampaigns).
+2023-05-08 19:18:46.033 -04:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-05-08 19:18:46.035 -04:00 [INF] Executed action FinalPracticeCampaigns.Controllers.CampaignsController.Delete (FinalPracticeCampaigns) in 10.4531ms
+2023-05-08 19:18:46.036 -04:00 [INF] Executed endpoint 'FinalPracticeCampaigns.Controllers.CampaignsController.Delete (FinalPracticeCampaigns)'
+2023-05-08 19:18:46.036 -04:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:5277/campaigns/1?type=nav - - - 400 - application/problem+json;+charset=utf-8 15.6251ms
+2023-05-08 19:21:19.938 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5277/swagger/index.html - -
+2023-05-08 19:21:19.940 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5277/swagger/index.html - - - 200 - text/html;charset=utf-8 1.2589ms
+2023-05-08 19:21:20.097 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5277/swagger/v1/swagger.json - -
+2023-05-08 19:21:20.100 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5277/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 3.0315ms
+2023-05-08 19:21:22.257 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5277/swagger/index.html - -
+2023-05-08 19:21:22.259 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5277/swagger/index.html - - - 200 - text/html;charset=utf-8 1.8317ms
+2023-05-08 19:21:22.301 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5277/swagger/v1/swagger.json - -
+2023-05-08 19:21:22.304 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5277/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 2.2848ms
+2023-05-08 19:21:22.808 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5277/swagger/index.html - -
+2023-05-08 19:21:22.810 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5277/swagger/index.html - - - 200 - text/html;charset=utf-8 1.8323ms
+2023-05-08 19:21:22.851 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5277/swagger/v1/swagger.json - -
+2023-05-08 19:21:22.854 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5277/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 2.7071ms
+2023-05-08 19:21:23.273 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5277/swagger/index.html - -
+2023-05-08 19:21:23.275 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5277/swagger/index.html - - - 200 - text/html;charset=utf-8 1.8376ms
+2023-05-08 19:21:23.308 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5277/swagger/v1/swagger.json - -
+2023-05-08 19:21:23.310 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5277/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 2.1062ms
+2023-05-08 19:22:02.292 -04:00 [INF] Now listening on: http://localhost:5277
+2023-05-08 19:22:02.321 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-08 19:22:02.321 -04:00 [INF] Hosting environment: Development
+2023-05-08 19:22:02.322 -04:00 [INF] Content root path: C:\Users\PCFACIL\Documents\FinalPractice-Campaigns\FinalPracticeCampaigns\
+2023-05-08 19:22:04.638 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5277/ - -
+2023-05-08 19:22:04.677 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5277/ - - - 404 0 - 41.2147ms
+2023-05-08 19:22:10.403 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5277/swagger/index.html - -
+2023-05-08 19:22:10.437 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5277/swagger/index.html - - - 200 - text/html;charset=utf-8 33.8179ms
+2023-05-08 19:22:10.522 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5277/swagger/v1/swagger.json - -
+2023-05-08 19:22:10.577 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5277/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 55.5731ms
+2023-05-08 19:22:27.735 -04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5277/campaigns application/json 84
+2023-05-08 19:22:27.739 -04:00 [INF] Executing endpoint 'FinalPracticeCampaigns.Controllers.CampaignsController.Post (FinalPracticeCampaigns)'
+2023-05-08 19:22:27.751 -04:00 [INF] Route matched with {action = "Post", controller = "Campaigns"}. Executing controller action with signature UPB.CoreLogic.Models.Campaigns Post(UPB.CoreLogic.Models.Campaigns) on controller FinalPracticeCampaigns.Controllers.CampaignsController (FinalPracticeCampaigns).
+2023-05-08 19:22:27.767 -04:00 [INF] Executing ObjectResult, writing value of type 'UPB.CoreLogic.Models.Campaigns'.
+2023-05-08 19:22:27.773 -04:00 [INF] Executed action FinalPracticeCampaigns.Controllers.CampaignsController.Post (FinalPracticeCampaigns) in 17.7859ms
+2023-05-08 19:22:27.775 -04:00 [INF] Executed endpoint 'FinalPracticeCampaigns.Controllers.CampaignsController.Post (FinalPracticeCampaigns)'
+2023-05-08 19:22:27.775 -04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5277/campaigns application/json 84 - 200 - application/json;+charset=utf-8 39.9736ms
+2023-05-08 19:22:34.541 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5277/campaigns - -
+2023-05-08 19:22:34.543 -04:00 [INF] Executing endpoint 'FinalPracticeCampaigns.Controllers.CampaignsController.Get (FinalPracticeCampaigns)'
+2023-05-08 19:22:34.544 -04:00 [INF] Route matched with {action = "Get", controller = "Campaigns"}. Executing controller action with signature System.Collections.Generic.List`1[UPB.CoreLogic.Models.Campaigns] Get() on controller FinalPracticeCampaigns.Controllers.CampaignsController (FinalPracticeCampaigns).
+2023-05-08 19:22:34.546 -04:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[UPB.CoreLogic.Models.Campaigns, CoreLogic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-05-08 19:22:34.547 -04:00 [INF] Executed action FinalPracticeCampaigns.Controllers.CampaignsController.Get (FinalPracticeCampaigns) in 1.4222ms
+2023-05-08 19:22:34.548 -04:00 [INF] Executed endpoint 'FinalPracticeCampaigns.Controllers.CampaignsController.Get (FinalPracticeCampaigns)'
+2023-05-08 19:22:34.548 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5277/campaigns - - - 200 - application/json;+charset=utf-8 7.1693ms
+2023-05-08 19:22:41.999 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5277/campaigns/nav - -
+2023-05-08 19:22:42.000 -04:00 [INF] Executing endpoint 'FinalPracticeCampaigns.Controllers.CampaignsController.GetByType (FinalPracticeCampaigns)'
+2023-05-08 19:22:42.003 -04:00 [INF] Route matched with {action = "GetByType", controller = "Campaigns"}. Executing controller action with signature UPB.CoreLogic.Models.Campaigns GetByType(System.String) on controller FinalPracticeCampaigns.Controllers.CampaignsController (FinalPracticeCampaigns).
+2023-05-08 19:22:42.005 -04:00 [INF] Executing ObjectResult, writing value of type 'UPB.CoreLogic.Models.Campaigns'.
+2023-05-08 19:22:42.006 -04:00 [INF] Executed action FinalPracticeCampaigns.Controllers.CampaignsController.GetByType (FinalPracticeCampaigns) in 2.0498ms
+2023-05-08 19:22:42.007 -04:00 [INF] Executed endpoint 'FinalPracticeCampaigns.Controllers.CampaignsController.GetByType (FinalPracticeCampaigns)'
+2023-05-08 19:22:42.008 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5277/campaigns/nav - - - 200 - application/json;+charset=utf-8 8.3654ms
+2023-05-08 19:22:53.509 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5277/campaigns/nav - -
+2023-05-08 19:22:53.510 -04:00 [INF] Executing endpoint 'FinalPracticeCampaigns.Controllers.CampaignsController.GetByType (FinalPracticeCampaigns)'
+2023-05-08 19:22:53.511 -04:00 [INF] Route matched with {action = "GetByType", controller = "Campaigns"}. Executing controller action with signature UPB.CoreLogic.Models.Campaigns GetByType(System.String) on controller FinalPracticeCampaigns.Controllers.CampaignsController (FinalPracticeCampaigns).
+2023-05-08 19:22:53.512 -04:00 [INF] Executing ObjectResult, writing value of type 'UPB.CoreLogic.Models.Campaigns'.
+2023-05-08 19:22:53.513 -04:00 [INF] Executed action FinalPracticeCampaigns.Controllers.CampaignsController.GetByType (FinalPracticeCampaigns) in 1.1312ms
+2023-05-08 19:22:53.514 -04:00 [INF] Executed endpoint 'FinalPracticeCampaigns.Controllers.CampaignsController.GetByType (FinalPracticeCampaigns)'
+2023-05-08 19:22:53.514 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5277/campaigns/nav - - - 200 - application/json;+charset=utf-8 5.6644ms
+2023-05-08 19:23:10.818 -04:00 [INF] Request starting HTTP/1.1 POST http://localhost:5277/campaigns application/json 87
+2023-05-08 19:23:10.820 -04:00 [INF] Executing endpoint 'FinalPracticeCampaigns.Controllers.CampaignsController.Post (FinalPracticeCampaigns)'
+2023-05-08 19:23:10.820 -04:00 [INF] Route matched with {action = "Post", controller = "Campaigns"}. Executing controller action with signature UPB.CoreLogic.Models.Campaigns Post(UPB.CoreLogic.Models.Campaigns) on controller FinalPracticeCampaigns.Controllers.CampaignsController (FinalPracticeCampaigns).
+2023-05-08 19:23:10.822 -04:00 [INF] Executing ObjectResult, writing value of type 'UPB.CoreLogic.Models.Campaigns'.
+2023-05-08 19:23:10.823 -04:00 [INF] Executed action FinalPracticeCampaigns.Controllers.CampaignsController.Post (FinalPracticeCampaigns) in 1.239ms
+2023-05-08 19:23:10.824 -04:00 [INF] Executed endpoint 'FinalPracticeCampaigns.Controllers.CampaignsController.Post (FinalPracticeCampaigns)'
+2023-05-08 19:23:10.824 -04:00 [INF] Request finished HTTP/1.1 POST http://localhost:5277/campaigns application/json 87 - 200 - application/json;+charset=utf-8 6.1239ms
+2023-05-08 19:23:15.609 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5277/campaigns - -
+2023-05-08 19:23:15.610 -04:00 [INF] Executing endpoint 'FinalPracticeCampaigns.Controllers.CampaignsController.Get (FinalPracticeCampaigns)'
+2023-05-08 19:23:15.611 -04:00 [INF] Route matched with {action = "Get", controller = "Campaigns"}. Executing controller action with signature System.Collections.Generic.List`1[UPB.CoreLogic.Models.Campaigns] Get() on controller FinalPracticeCampaigns.Controllers.CampaignsController (FinalPracticeCampaigns).
+2023-05-08 19:23:15.613 -04:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[UPB.CoreLogic.Models.Campaigns, CoreLogic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-05-08 19:23:15.614 -04:00 [INF] Executed action FinalPracticeCampaigns.Controllers.CampaignsController.Get (FinalPracticeCampaigns) in 0.9515ms
+2023-05-08 19:23:15.615 -04:00 [INF] Executed endpoint 'FinalPracticeCampaigns.Controllers.CampaignsController.Get (FinalPracticeCampaigns)'
+2023-05-08 19:23:15.615 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5277/campaigns - - - 200 - application/json;+charset=utf-8 6.4317ms
+2023-05-08 19:23:20.806 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5277/campaigns/hall - -
+2023-05-08 19:23:20.807 -04:00 [INF] Executing endpoint 'FinalPracticeCampaigns.Controllers.CampaignsController.GetByType (FinalPracticeCampaigns)'
+2023-05-08 19:23:20.808 -04:00 [INF] Route matched with {action = "GetByType", controller = "Campaigns"}. Executing controller action with signature UPB.CoreLogic.Models.Campaigns GetByType(System.String) on controller FinalPracticeCampaigns.Controllers.CampaignsController (FinalPracticeCampaigns).
+2023-05-08 19:23:20.810 -04:00 [INF] Executing ObjectResult, writing value of type 'UPB.CoreLogic.Models.Campaigns'.
+2023-05-08 19:23:20.811 -04:00 [INF] Executed action FinalPracticeCampaigns.Controllers.CampaignsController.GetByType (FinalPracticeCampaigns) in 1.357ms
+2023-05-08 19:23:20.813 -04:00 [INF] Executed endpoint 'FinalPracticeCampaigns.Controllers.CampaignsController.GetByType (FinalPracticeCampaigns)'
+2023-05-08 19:23:20.814 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5277/campaigns/hall - - - 200 - application/json;+charset=utf-8 7.6685ms
+2023-05-08 19:23:54.595 -04:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5277/campaigns/1?type=nav - -
+2023-05-08 19:23:54.596 -04:00 [INF] Executing endpoint 'FinalPracticeCampaigns.Controllers.CampaignsController.Delete (FinalPracticeCampaigns)'
+2023-05-08 19:23:54.598 -04:00 [INF] Route matched with {action = "Delete", controller = "Campaigns"}. Executing controller action with signature UPB.CoreLogic.Models.Campaigns Delete(System.String, System.String) on controller FinalPracticeCampaigns.Controllers.CampaignsController (FinalPracticeCampaigns).
+2023-05-08 19:23:54.603 -04:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-05-08 19:23:54.605 -04:00 [INF] Executed action FinalPracticeCampaigns.Controllers.CampaignsController.Delete (FinalPracticeCampaigns) in 5.4444ms
+2023-05-08 19:23:54.605 -04:00 [INF] Executed endpoint 'FinalPracticeCampaigns.Controllers.CampaignsController.Delete (FinalPracticeCampaigns)'
+2023-05-08 19:23:54.606 -04:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:5277/campaigns/1?type=nav - - - 400 - application/problem+json;+charset=utf-8 10.9999ms
+2023-05-08 19:24:01.909 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5277/campaigns - -
+2023-05-08 19:24:01.911 -04:00 [INF] Executing endpoint 'FinalPracticeCampaigns.Controllers.CampaignsController.Get (FinalPracticeCampaigns)'
+2023-05-08 19:24:01.911 -04:00 [INF] Route matched with {action = "Get", controller = "Campaigns"}. Executing controller action with signature System.Collections.Generic.List`1[UPB.CoreLogic.Models.Campaigns] Get() on controller FinalPracticeCampaigns.Controllers.CampaignsController (FinalPracticeCampaigns).
+2023-05-08 19:24:01.913 -04:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[UPB.CoreLogic.Models.Campaigns, CoreLogic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-05-08 19:24:01.914 -04:00 [INF] Executed action FinalPracticeCampaigns.Controllers.CampaignsController.Get (FinalPracticeCampaigns) in 1.0209ms
+2023-05-08 19:24:01.915 -04:00 [INF] Executed endpoint 'FinalPracticeCampaigns.Controllers.CampaignsController.Get (FinalPracticeCampaigns)'
+2023-05-08 19:24:01.915 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5277/campaigns - - - 200 - application/json;+charset=utf-8 6.0193ms
+2023-05-08 19:24:07.435 -04:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5277/campaigns/1?type=nav - -
+2023-05-08 19:24:07.436 -04:00 [INF] Executing endpoint 'FinalPracticeCampaigns.Controllers.CampaignsController.Delete (FinalPracticeCampaigns)'
+2023-05-08 19:24:07.437 -04:00 [INF] Route matched with {action = "Delete", controller = "Campaigns"}. Executing controller action with signature UPB.CoreLogic.Models.Campaigns Delete(System.String, System.String) on controller FinalPracticeCampaigns.Controllers.CampaignsController (FinalPracticeCampaigns).
+2023-05-08 19:24:07.439 -04:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-05-08 19:24:07.440 -04:00 [INF] Executed action FinalPracticeCampaigns.Controllers.CampaignsController.Delete (FinalPracticeCampaigns) in 1.5405ms
+2023-05-08 19:24:07.441 -04:00 [INF] Executed endpoint 'FinalPracticeCampaigns.Controllers.CampaignsController.Delete (FinalPracticeCampaigns)'
+2023-05-08 19:24:07.442 -04:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:5277/campaigns/1?type=nav - - - 400 - application/problem+json;+charset=utf-8 6.4132ms
+2023-05-08 19:24:13.959 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5277/campaigns - -
+2023-05-08 19:24:13.960 -04:00 [INF] Executing endpoint 'FinalPracticeCampaigns.Controllers.CampaignsController.Get (FinalPracticeCampaigns)'
+2023-05-08 19:24:13.961 -04:00 [INF] Route matched with {action = "Get", controller = "Campaigns"}. Executing controller action with signature System.Collections.Generic.List`1[UPB.CoreLogic.Models.Campaigns] Get() on controller FinalPracticeCampaigns.Controllers.CampaignsController (FinalPracticeCampaigns).
+2023-05-08 19:24:13.962 -04:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[UPB.CoreLogic.Models.Campaigns, CoreLogic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-05-08 19:24:13.963 -04:00 [INF] Executed action FinalPracticeCampaigns.Controllers.CampaignsController.Get (FinalPracticeCampaigns) in 0.9504ms
+2023-05-08 19:24:13.964 -04:00 [INF] Executed endpoint 'FinalPracticeCampaigns.Controllers.CampaignsController.Get (FinalPracticeCampaigns)'
+2023-05-08 19:24:13.964 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5277/campaigns - - - 200 - application/json;+charset=utf-8 5.8782ms
+2023-05-08 19:25:24.018 -04:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5277/campaigns/1?type=nav - -
+2023-05-08 19:25:24.020 -04:00 [INF] Executing endpoint 'FinalPracticeCampaigns.Controllers.CampaignsController.Delete (FinalPracticeCampaigns)'
+2023-05-08 19:25:24.020 -04:00 [INF] Route matched with {action = "Delete", controller = "Campaigns"}. Executing controller action with signature UPB.CoreLogic.Models.Campaigns Delete(System.String, System.String) on controller FinalPracticeCampaigns.Controllers.CampaignsController (FinalPracticeCampaigns).
+2023-05-08 19:25:24.021 -04:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-05-08 19:25:24.022 -04:00 [INF] Executed action FinalPracticeCampaigns.Controllers.CampaignsController.Delete (FinalPracticeCampaigns) in 1.0415ms
+2023-05-08 19:25:24.023 -04:00 [INF] Executed endpoint 'FinalPracticeCampaigns.Controllers.CampaignsController.Delete (FinalPracticeCampaigns)'
+2023-05-08 19:25:24.024 -04:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:5277/campaigns/1?type=nav - - - 400 - application/problem+json;+charset=utf-8 5.3720ms
+2023-05-08 19:25:24.675 -04:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5277/campaigns/1?type=nav - -
+2023-05-08 19:25:24.677 -04:00 [INF] Executing endpoint 'FinalPracticeCampaigns.Controllers.CampaignsController.Delete (FinalPracticeCampaigns)'
+2023-05-08 19:25:24.678 -04:00 [INF] Route matched with {action = "Delete", controller = "Campaigns"}. Executing controller action with signature UPB.CoreLogic.Models.Campaigns Delete(System.String, System.String) on controller FinalPracticeCampaigns.Controllers.CampaignsController (FinalPracticeCampaigns).
+2023-05-08 19:25:24.679 -04:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-05-08 19:25:24.680 -04:00 [INF] Executed action FinalPracticeCampaigns.Controllers.CampaignsController.Delete (FinalPracticeCampaigns) in 0.989ms
+2023-05-08 19:25:24.681 -04:00 [INF] Executed endpoint 'FinalPracticeCampaigns.Controllers.CampaignsController.Delete (FinalPracticeCampaigns)'
+2023-05-08 19:25:24.682 -04:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:5277/campaigns/1?type=nav - - - 400 - application/problem+json;+charset=utf-8 6.4286ms
+2023-05-08 19:26:33.703 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5277/campaigns/hallsd - -
+2023-05-08 19:26:33.704 -04:00 [INF] Executing endpoint 'FinalPracticeCampaigns.Controllers.CampaignsController.GetByType (FinalPracticeCampaigns)'
+2023-05-08 19:26:33.705 -04:00 [INF] Route matched with {action = "GetByType", controller = "Campaigns"}. Executing controller action with signature UPB.CoreLogic.Models.Campaigns GetByType(System.String) on controller FinalPracticeCampaigns.Controllers.CampaignsController (FinalPracticeCampaigns).
+2023-05-08 19:26:33.707 -04:00 [INF] Executed action FinalPracticeCampaigns.Controllers.CampaignsController.GetByType (FinalPracticeCampaigns) in 0.7025ms
+2023-05-08 19:26:33.708 -04:00 [INF] Executed endpoint 'FinalPracticeCampaigns.Controllers.CampaignsController.GetByType (FinalPracticeCampaigns)'
+2023-05-08 19:26:33.709 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5277/campaigns/hallsd - - - 200 - text/json 5.9784ms
+2023-05-08 19:27:04.402 -04:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5277/campaigns/nav?type=nav - -
+2023-05-08 19:27:04.404 -04:00 [INF] Executing endpoint 'FinalPracticeCampaigns.Controllers.CampaignsController.Delete (FinalPracticeCampaigns)'
+2023-05-08 19:27:04.404 -04:00 [INF] Route matched with {action = "Delete", controller = "Campaigns"}. Executing controller action with signature UPB.CoreLogic.Models.Campaigns Delete(System.String, System.String) on controller FinalPracticeCampaigns.Controllers.CampaignsController (FinalPracticeCampaigns).
+2023-05-08 19:27:04.406 -04:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-05-08 19:27:04.407 -04:00 [INF] Executed action FinalPracticeCampaigns.Controllers.CampaignsController.Delete (FinalPracticeCampaigns) in 1.1283ms
+2023-05-08 19:27:04.407 -04:00 [INF] Executed endpoint 'FinalPracticeCampaigns.Controllers.CampaignsController.Delete (FinalPracticeCampaigns)'
+2023-05-08 19:27:04.408 -04:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:5277/campaigns/nav?type=nav - - - 400 - application/problem+json;+charset=utf-8 5.6384ms
+2023-05-08 19:27:09.916 -04:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5277/campaigns/nav - -
+2023-05-08 19:27:09.917 -04:00 [INF] Executing endpoint 'FinalPracticeCampaigns.Controllers.CampaignsController.Delete (FinalPracticeCampaigns)'
+2023-05-08 19:27:09.918 -04:00 [INF] Route matched with {action = "Delete", controller = "Campaigns"}. Executing controller action with signature UPB.CoreLogic.Models.Campaigns Delete(System.String, System.String) on controller FinalPracticeCampaigns.Controllers.CampaignsController (FinalPracticeCampaigns).
+2023-05-08 19:27:09.919 -04:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-05-08 19:27:09.921 -04:00 [INF] Executed action FinalPracticeCampaigns.Controllers.CampaignsController.Delete (FinalPracticeCampaigns) in 1.3909ms
+2023-05-08 19:27:09.921 -04:00 [INF] Executed endpoint 'FinalPracticeCampaigns.Controllers.CampaignsController.Delete (FinalPracticeCampaigns)'
+2023-05-08 19:27:09.922 -04:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:5277/campaigns/nav - - - 400 - application/problem+json;+charset=utf-8 6.6172ms
+2023-05-08 19:27:16.894 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5277/campaigns - -
+2023-05-08 19:27:16.895 -04:00 [INF] Executing endpoint 'FinalPracticeCampaigns.Controllers.CampaignsController.Get (FinalPracticeCampaigns)'
+2023-05-08 19:27:16.896 -04:00 [INF] Route matched with {action = "Get", controller = "Campaigns"}. Executing controller action with signature System.Collections.Generic.List`1[UPB.CoreLogic.Models.Campaigns] Get() on controller FinalPracticeCampaigns.Controllers.CampaignsController (FinalPracticeCampaigns).
+2023-05-08 19:27:16.897 -04:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[UPB.CoreLogic.Models.Campaigns, CoreLogic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-05-08 19:27:16.898 -04:00 [INF] Executed action FinalPracticeCampaigns.Controllers.CampaignsController.Get (FinalPracticeCampaigns) in 0.793ms
+2023-05-08 19:27:16.899 -04:00 [INF] Executed endpoint 'FinalPracticeCampaigns.Controllers.CampaignsController.Get (FinalPracticeCampaigns)'
+2023-05-08 19:27:16.900 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5277/campaigns - - - 200 - application/json;+charset=utf-8 5.8808ms
+2023-05-08 19:27:22.320 -04:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5277/campaigns/nav - -
+2023-05-08 19:27:22.322 -04:00 [INF] Executing endpoint 'FinalPracticeCampaigns.Controllers.CampaignsController.Delete (FinalPracticeCampaigns)'
+2023-05-08 19:27:22.323 -04:00 [INF] Route matched with {action = "Delete", controller = "Campaigns"}. Executing controller action with signature UPB.CoreLogic.Models.Campaigns Delete(System.String, System.String) on controller FinalPracticeCampaigns.Controllers.CampaignsController (FinalPracticeCampaigns).
+2023-05-08 19:27:22.324 -04:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2023-05-08 19:27:22.325 -04:00 [INF] Executed action FinalPracticeCampaigns.Controllers.CampaignsController.Delete (FinalPracticeCampaigns) in 0.9848ms
+2023-05-08 19:27:22.325 -04:00 [INF] Executed endpoint 'FinalPracticeCampaigns.Controllers.CampaignsController.Delete (FinalPracticeCampaigns)'
+2023-05-08 19:27:22.326 -04:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:5277/campaigns/nav - - - 400 - application/problem+json;+charset=utf-8 5.8591ms
+2023-05-08 19:28:09.494 -04:00 [INF] Application is shutting down...
+2023-05-08 19:30:38.211 -04:00 [INF] Now listening on: http://localhost:5277
+2023-05-08 19:30:38.239 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-08 19:30:38.240 -04:00 [INF] Hosting environment: Development
+2023-05-08 19:30:38.241 -04:00 [INF] Content root path: C:\Users\PCFACIL\Documents\FinalPractice-Campaigns\FinalPracticeCampaigns\
+2023-05-08 19:30:39.732 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5277/ - -
+2023-05-08 19:30:39.770 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5277/ - - - 404 0 - 40.1644ms
+2023-05-08 19:30:50.391 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5277/ - -
+2023-05-08 19:30:50.392 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5277/ - - - 404 0 - 1.2707ms
+2023-05-08 19:30:54.477 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5277/swagger/index.html - -
+2023-05-08 19:30:54.512 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5277/swagger/index.html - - - 200 - text/html;charset=utf-8 35.0192ms
+2023-05-08 19:30:54.602 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5277/swagger/v1/swagger.json - -
+2023-05-08 19:30:54.658 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5277/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 56.0925ms
+2023-05-08 19:31:27.055 -04:00 [INF] Application is shutting down...

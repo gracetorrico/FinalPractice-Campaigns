@@ -37,3 +37,37 @@ E:\UPB\2023\CertificaciónI\Tercer Parcial\FinalPractice\repo-finalpractice\Fina
 E:\UPB\2023\CertificaciónI\Tercer Parcial\FinalPractice\repo-finalpractice\FinalPracticeCampaigns\bin\Debug\net6.0\Serilog.Sinks.File.dll
 E:\UPB\2023\CertificaciónI\Tercer Parcial\FinalPractice\repo-finalpractice\FinalPracticeCampaigns\bin\Debug\net6.0\CoreLogic.dll
 E:\UPB\2023\CertificaciónI\Tercer Parcial\FinalPractice\repo-finalpractice\FinalPracticeCampaigns\bin\Debug\net6.0\CoreLogic.pdb
+C:\Users\PCFACIL\Documents\FinalPractice-Campaigns\FinalPracticeCampaigns\obj\Debug\net6.0\FinalPracticeCampaigns.csproj.AssemblyReference.cache
+C:\Users\PCFACIL\Documents\FinalPractice-Campaigns\FinalPracticeCampaigns\obj\Debug\net6.0\FinalPracticeCampaigns.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\PCFACIL\Documents\FinalPractice-Campaigns\FinalPracticeCampaigns\obj\Debug\net6.0\FinalPracticeCampaigns.AssemblyInfoInputs.cache
+C:\Users\PCFACIL\Documents\FinalPractice-Campaigns\FinalPracticeCampaigns\obj\Debug\net6.0\FinalPracticeCampaigns.AssemblyInfo.cs
+C:\Users\PCFACIL\Documents\FinalPractice-Campaigns\FinalPracticeCampaigns\obj\Debug\net6.0\FinalPracticeCampaigns.csproj.CoreCompileInputs.cache
+C:\Users\PCFACIL\Documents\FinalPractice-Campaigns\FinalPracticeCampaigns\obj\Debug\net6.0\FinalPracticeCampaigns.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\PCFACIL\Documents\FinalPractice-Campaigns\FinalPracticeCampaigns\obj\Debug\net6.0\FinalPracticeCampaigns.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\PCFACIL\Documents\FinalPractice-Campaigns\FinalPracticeCampaigns\obj\Debug\net6.0\FinalPracticeCampaigns.dll
+C:\Users\PCFACIL\Documents\FinalPractice-Campaigns\FinalPracticeCampaigns\obj\Debug\net6.0\refint\FinalPracticeCampaigns.dll
+C:\Users\PCFACIL\Documents\FinalPractice-Campaigns\FinalPracticeCampaigns\obj\Debug\net6.0\FinalPracticeCampaigns.pdb
+C:\Users\PCFACIL\Documents\FinalPractice-Campaigns\FinalPracticeCampaigns\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\PCFACIL\Documents\FinalPractice-Campaigns\FinalPracticeCampaigns\bin\Debug\net6.0\appsettings.json
+C:\Users\PCFACIL\Documents\FinalPractice-Campaigns\FinalPracticeCampaigns\bin\Debug\net6.0\FinalPracticeCampaigns.exe
+C:\Users\PCFACIL\Documents\FinalPractice-Campaigns\FinalPracticeCampaigns\bin\Debug\net6.0\FinalPracticeCampaigns.deps.json
+C:\Users\PCFACIL\Documents\FinalPractice-Campaigns\FinalPracticeCampaigns\bin\Debug\net6.0\FinalPracticeCampaigns.runtimeconfig.json
+C:\Users\PCFACIL\Documents\FinalPractice-Campaigns\FinalPracticeCampaigns\bin\Debug\net6.0\FinalPracticeCampaigns.dll
+C:\Users\PCFACIL\Documents\FinalPractice-Campaigns\FinalPracticeCampaigns\bin\Debug\net6.0\FinalPracticeCampaigns.pdb
+C:\Users\PCFACIL\Documents\FinalPractice-Campaigns\FinalPracticeCampaigns\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\PCFACIL\Documents\FinalPractice-Campaigns\FinalPracticeCampaigns\bin\Debug\net6.0\Serilog.dll
+C:\Users\PCFACIL\Documents\FinalPractice-Campaigns\FinalPracticeCampaigns\bin\Debug\net6.0\Serilog.Extensions.Hosting.dll
+C:\Users\PCFACIL\Documents\FinalPractice-Campaigns\FinalPracticeCampaigns\bin\Debug\net6.0\Serilog.Extensions.Logging.dll
+C:\Users\PCFACIL\Documents\FinalPractice-Campaigns\FinalPracticeCampaigns\bin\Debug\net6.0\Serilog.Sinks.Console.dll
+C:\Users\PCFACIL\Documents\FinalPractice-Campaigns\FinalPracticeCampaigns\bin\Debug\net6.0\Serilog.Sinks.File.dll
+C:\Users\PCFACIL\Documents\FinalPractice-Campaigns\FinalPracticeCampaigns\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\PCFACIL\Documents\FinalPractice-Campaigns\FinalPracticeCampaigns\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\PCFACIL\Documents\FinalPractice-Campaigns\FinalPracticeCampaigns\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\PCFACIL\Documents\FinalPractice-Campaigns\FinalPracticeCampaigns\bin\Debug\net6.0\CoreLogic.dll
+C:\Users\PCFACIL\Documents\FinalPractice-Campaigns\FinalPracticeCampaigns\bin\Debug\net6.0\CoreLogic.pdb
+C:\Users\PCFACIL\Documents\FinalPractice-Campaigns\FinalPracticeCampaigns\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\PCFACIL\Documents\FinalPractice-Campaigns\FinalPracticeCampaigns\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\PCFACIL\Documents\FinalPractice-Campaigns\FinalPracticeCampaigns\obj\Debug\net6.0\scopedcss\bundle\FinalPracticeCampaigns.styles.css
+C:\Users\PCFACIL\Documents\FinalPractice-Campaigns\FinalPracticeCampaigns\obj\Debug\net6.0\FinalPracticeCampaigns.csproj.CopyComplete
+C:\Users\PCFACIL\Documents\FinalPractice-Campaigns\FinalPracticeCampaigns\obj\Debug\net6.0\FinalPracticeCampaigns.genruntimeconfig.cache
+C:\Users\PCFACIL\Documents\FinalPractice-Campaigns\FinalPracticeCampaigns\obj\Debug\net6.0\ref\FinalPracticeCampaigns.dll
