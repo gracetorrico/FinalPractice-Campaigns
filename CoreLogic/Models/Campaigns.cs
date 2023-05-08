@@ -1,4 +1,4 @@
-namespace UPB.FinalPracticeCampaigns.Models;
+namespace UPB.CoreLogic.Models;
 
 public class Campaigns
 {

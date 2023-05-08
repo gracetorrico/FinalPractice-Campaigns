@@ -1,5 +1,5 @@
-using UPB.FinalPracticeCampaigns.Models;
-namespace UPB.FinalPracticeCampaigns.Managers;
+using UPB.CoreLogic.Models;
+namespace UPB.CoreLogic.Managers;
 
 public class CampaignManager
 {

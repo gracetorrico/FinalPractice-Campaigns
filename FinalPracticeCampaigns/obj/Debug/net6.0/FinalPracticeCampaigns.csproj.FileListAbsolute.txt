@@ -35,3 +35,5 @@ E:\UPB\2023\CertificaciónI\Tercer Parcial\FinalPractice\repo-finalpractice\Fina
 E:\UPB\2023\CertificaciónI\Tercer Parcial\FinalPractice\repo-finalpractice\FinalPracticeCampaigns\bin\Debug\net6.0\Serilog.Extensions.Logging.dll
 E:\UPB\2023\CertificaciónI\Tercer Parcial\FinalPractice\repo-finalpractice\FinalPracticeCampaigns\bin\Debug\net6.0\Serilog.Sinks.Console.dll
 E:\UPB\2023\CertificaciónI\Tercer Parcial\FinalPractice\repo-finalpractice\FinalPracticeCampaigns\bin\Debug\net6.0\Serilog.Sinks.File.dll
+E:\UPB\2023\CertificaciónI\Tercer Parcial\FinalPractice\repo-finalpractice\FinalPracticeCampaigns\bin\Debug\net6.0\CoreLogic.dll
+E:\UPB\2023\CertificaciónI\Tercer Parcial\FinalPractice\repo-finalpractice\FinalPracticeCampaigns\bin\Debug\net6.0\CoreLogic.pdb

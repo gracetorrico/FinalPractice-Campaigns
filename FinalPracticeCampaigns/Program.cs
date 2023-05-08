@@ -1,6 +1,6 @@
 using Microsoft.OpenApi.Models;
-using UPB.FinalPracticeCampaigns.Managers;
-using UPB.FinalPracticeCampaigns.Models;
+using UPB.CoreLogic.Managers;
+using UPB.CoreLogic.Models;
 using Serilog;
 
 var builder = WebApplication.CreateBuilder(args); //Servidor

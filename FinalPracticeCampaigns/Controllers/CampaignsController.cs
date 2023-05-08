@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
-using UPB.FinalPracticeCampaigns.Managers;
-using UPB.FinalPracticeCampaigns.Models;
+using UPB.CoreLogic.Managers;
+using UPB.CoreLogic.Models;
 
 namespace FinalPracticeCampaigns.Controllers;
 
