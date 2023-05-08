@@ -34,9 +34,12 @@ public class CampaignManager
         return new Campaigns();
     }
 
-    public Campaigns Delete()
+    public Campaigns Delete(string name, string type)
     {
-        return new Campaigns();
+        int campaignsToDeleteIndex = _campaigns.FindIndex(campaigns => campaigns.Name == name && campaigns.Type == type);
+        Campaigns campaignsToDelete = _campaigns[campaignsToDeleteIndex];
+        _students.RemoveAt(campaignsToDeleteIndex);
+        return campaignsToDelete;
     }
 
 }
