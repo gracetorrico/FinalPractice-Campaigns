@@ -34,11 +34,11 @@ public class CampaignsController : ControllerBase
     {
         return _campaignManager.Update();
     }
-
+    
     [HttpPost]
-    public Campaigns Post([FromBody] Campaigns patientToCreate)
+    public Campaigns Post([FromBody] Campaigns campaignToCreate)
     {
-        return _campaignManager.Create();
+        return _campaignManager.Create(campaignToCreate.Name, campaignToCreateType, campaignToCreate.Description);
     }
 
     [HttpDelete]

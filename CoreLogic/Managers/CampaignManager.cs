@@ -29,16 +29,33 @@ public class CampaignManager
         return new Campaigns();
     }
 
-    public Campaigns Create()
+    public Campaigns Create(string name, string type, string description)
     {
-        return new Campaigns();
+        Campaigns campaign; 
+
+        try
+        {
+            campaign = new Campaigns()
+            {
+                Name = name,
+                Type = type,
+                Description = description,
+                Enable = false
+            };
+        }
+        catch (System.Exception e)
+        {
+            throw new Exception(e.Message);
+        }
+        _campaigns.Add(campaign);
+        return campaign;
     }
 
     public Campaigns Delete(string name, string type)
     {
         int campaignsToDeleteIndex = _campaigns.FindIndex(campaigns => campaigns.Name == name && campaigns.Type == type);
         Campaigns campaignsToDelete = _campaigns[campaignsToDeleteIndex];
-        _students.RemoveAt(campaignsToDeleteIndex);
+        _campaigns.RemoveAt(campaignsToDeleteIndex);
         return campaignsToDelete;
     }
 
