@@ -1,23 +1,10 @@
 using Microsoft.OpenApi.Models;
 using UPB.CoreLogic.Managers;
 using UPB.CoreLogic.Models;
+using UPB.FinalPracticeCampaigns.Middlewares;
 using Serilog;
 
 var builder = WebApplication.CreateBuilder(args); //Servidor
-//creating the logger and setting up sinks, filters and properties
-Log.Logger = new LoggerConfiguration()
-    .WriteTo.Console()
-    .WriteTo.File("logs/xxx.log", rollingInterval: RollingInterval.Day)
-    .CreateBootstrapLogger();
-
-
-//after create the builder - UseSerilog
-builder.Host.UseSerilog();
-
-// Add services to the container.(Servicios)
-builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-builder.Services.AddEndpointsApiExplorer();
 
 var configurationBuilder = new ConfigurationBuilder()
     .SetBasePath(builder.Environment.ContentRootPath)
@@ -27,6 +14,23 @@ var configurationBuilder = new ConfigurationBuilder()
 
 IConfiguration Configuration = configurationBuilder.Build(); 
 string siteTitle = Configuration.GetSection("Title").Value;
+var environment = Configuration.GetValue<string>("Environment");
+
+//creating the logger and setting up sinks, filters and properties
+LoggerConfiguration loggerConfiguration;
+loggerConfiguration = new LoggerConfiguration()
+        .WriteTo.Console()
+        .WriteTo.File("logs/xxx.log", rollingInterval: RollingInterval.Day);
+        
+Log.Logger = loggerConfiguration.CreateBootstrapLogger();
+
+//after create the builder - UseSerilog
+builder.Host.UseSerilog();
+
+// Add services to the container.(Servicios)
+builder.Services.AddSingleton<CampaignManager>();
+builder.Services.AddControllers();
+builder.Services.AddEndpointsApiExplorer();
 
 builder.Services.AddSwaggerGen(options =>
 {
@@ -41,9 +45,8 @@ builder.Services.AddSwaggerGen(options =>
 var app = builder.Build();
 
 // Configure the HTTP request pipeline. (Configuración)
+app.UseGlobalExceptionHandler();
 app.UseSwagger();
 app.UseSwaggerUI();
-app.UseHttpsRedirection();
-app.UseAuthorization();
 app.MapControllers();
 app.Run();
