@@ -47,6 +47,13 @@ public class CampaignsController : ControllerBase
     {
         return _campaignManager.Disable(id);
     }
+
+    [HttpPut]
+    [Route("{id}/search-partners")]
+    public void SearchPartners([FromRoute] int id)
+    {
+        _campaignManager.SearchPartners(id);
+    }
     
     [HttpPost]
     public Campaigns Post([FromBody] Campaigns campaignToCreate)
