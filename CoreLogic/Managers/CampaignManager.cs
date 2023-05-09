@@ -40,7 +40,8 @@ public class CampaignManager
                 Name = name,
                 Type = type,
                 Description = description,
-                Enable = false
+                Enable = false,
+                RestaurantPartner = null
             };
         }
         catch (System.Exception e)
