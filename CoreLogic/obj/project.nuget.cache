@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "NRPCuoYsbXr+2WYzjwgcRGL324NblQNz6fg6RrOl++wlN2AJHiaK1UAm1lxAKfbiYCMIfusaSLG1rql2GHgA8w==",
+  "dgSpecHash": "dBaLGkN9poTml9GpyHaUhyw7rWd1IP+KyE5pnd3WzJcMt3YshKYI45uEtEBscaVzuVDjPy0OupkOUlGDhftP5g==",
   "success": true,
-  "projectFilePath": "E:\\UPB\\2023\\CertificaciónI\\Tercer Parcial\\FinalPractice\\repo-finalpractice\\CoreLogic\\CoreLogic.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "D:\\Universidad\\5to SEMESTRE\\CERTIFICACION 1\\Proyecto final\\FinalPractice-Campaigns\\CoreLogic\\CoreLogic.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\ASUS\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
   "logs": []
 }

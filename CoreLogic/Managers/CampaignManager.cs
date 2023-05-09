@@ -1,14 +1,20 @@
 using UPB.CoreLogic.Models;
+using Newtonsoft.Json;
+
+
+
 namespace UPB.CoreLogic.Managers;
 
 public class CampaignManager
 {
     private List<Campaigns> _campaigns;
+    private string _json;
     private static int _idCounter = 0;
     
     public CampaignManager()
     {
         _campaigns = new List<Campaigns>();
+        _json = "..\\campaigns.json";
     }
 
     public List<Campaigns> Init()
@@ -104,6 +110,15 @@ public class CampaignManager
             throw new Exception(e.Message);
         }
         _campaigns.Add(campaign);
+
+
+        //reading all the json file to add a new line
+        string json = File.ReadAllText(_json);
+
+        // serializing created object and adding to the json file
+        json += "\n"+ JsonConvert.SerializeObject(campaign);
+        File.WriteAllText(_json, json);
+
         return campaign;
     }
 
