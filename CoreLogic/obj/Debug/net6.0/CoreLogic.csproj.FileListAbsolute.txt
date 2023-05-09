@@ -10,3 +10,15 @@ E:\UPB\2023\CertificaciónI\Tercer Parcial\FinalPractice\repo-finalpractice\Core
 E:\UPB\2023\CertificaciónI\Tercer Parcial\FinalPractice\repo-finalpractice\CoreLogic\obj\Debug\net6.0\refint\CoreLogic.dll
 E:\UPB\2023\CertificaciónI\Tercer Parcial\FinalPractice\repo-finalpractice\CoreLogic\obj\Debug\net6.0\CoreLogic.pdb
 E:\UPB\2023\CertificaciónI\Tercer Parcial\FinalPractice\repo-finalpractice\CoreLogic\obj\Debug\net6.0\ref\CoreLogic.dll
+D:\Universidad\5to SEMESTRE\CERTIFICACION 1\Proyecto final\FinalPractice-Campaigns\CoreLogic\bin\Debug\net6.0\CoreLogic.deps.json
+D:\Universidad\5to SEMESTRE\CERTIFICACION 1\Proyecto final\FinalPractice-Campaigns\CoreLogic\bin\Debug\net6.0\CoreLogic.dll
+D:\Universidad\5to SEMESTRE\CERTIFICACION 1\Proyecto final\FinalPractice-Campaigns\CoreLogic\bin\Debug\net6.0\CoreLogic.pdb
+D:\Universidad\5to SEMESTRE\CERTIFICACION 1\Proyecto final\FinalPractice-Campaigns\CoreLogic\obj\Debug\net6.0\CoreLogic.csproj.AssemblyReference.cache
+D:\Universidad\5to SEMESTRE\CERTIFICACION 1\Proyecto final\FinalPractice-Campaigns\CoreLogic\obj\Debug\net6.0\CoreLogic.GeneratedMSBuildEditorConfig.editorconfig
+D:\Universidad\5to SEMESTRE\CERTIFICACION 1\Proyecto final\FinalPractice-Campaigns\CoreLogic\obj\Debug\net6.0\CoreLogic.AssemblyInfoInputs.cache
+D:\Universidad\5to SEMESTRE\CERTIFICACION 1\Proyecto final\FinalPractice-Campaigns\CoreLogic\obj\Debug\net6.0\CoreLogic.AssemblyInfo.cs
+D:\Universidad\5to SEMESTRE\CERTIFICACION 1\Proyecto final\FinalPractice-Campaigns\CoreLogic\obj\Debug\net6.0\CoreLogic.csproj.CoreCompileInputs.cache
+D:\Universidad\5to SEMESTRE\CERTIFICACION 1\Proyecto final\FinalPractice-Campaigns\CoreLogic\obj\Debug\net6.0\CoreLogic.dll
+D:\Universidad\5to SEMESTRE\CERTIFICACION 1\Proyecto final\FinalPractice-Campaigns\CoreLogic\obj\Debug\net6.0\refint\CoreLogic.dll
+D:\Universidad\5to SEMESTRE\CERTIFICACION 1\Proyecto final\FinalPractice-Campaigns\CoreLogic\obj\Debug\net6.0\CoreLogic.pdb
+D:\Universidad\5to SEMESTRE\CERTIFICACION 1\Proyecto final\FinalPractice-Campaigns\CoreLogic\obj\Debug\net6.0\ref\CoreLogic.dll
