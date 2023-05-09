@@ -55,23 +55,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ASUS\\.nuget\\packages\\": {},
+    "C:\\Users\\USUARIO\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Universidad\\5to SEMESTRE\\CERTIFICACION 1\\Proyecto final\\FinalPractice-Campaigns\\CoreLogic\\CoreLogic.csproj",
+      "projectUniqueName": "E:\\UPB\\2023\\CertificaciónI\\Tercer Parcial\\FinalPractice\\repo-finalpractice\\CoreLogic\\CoreLogic.csproj",
       "projectName": "CoreLogic",
-      "projectPath": "D:\\Universidad\\5to SEMESTRE\\CERTIFICACION 1\\Proyecto final\\FinalPractice-Campaigns\\CoreLogic\\CoreLogic.csproj",
-      "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-      "outputPath": "D:\\Universidad\\5to SEMESTRE\\CERTIFICACION 1\\Proyecto final\\FinalPractice-Campaigns\\CoreLogic\\obj\\",
+      "projectPath": "E:\\UPB\\2023\\CertificaciónI\\Tercer Parcial\\FinalPractice\\repo-finalpractice\\CoreLogic\\CoreLogic.csproj",
+      "packagesPath": "C:\\Users\\USUARIO\\.nuget\\packages\\",
+      "outputPath": "E:\\UPB\\2023\\CertificaciónI\\Tercer Parcial\\FinalPractice\\repo-finalpractice\\CoreLogic\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\USUARIO\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -80,6 +80,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -119,7 +120,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.202\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
       }
     }
   }
