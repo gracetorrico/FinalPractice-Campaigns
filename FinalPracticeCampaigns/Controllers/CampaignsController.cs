@@ -38,7 +38,7 @@ public class CampaignsController : ControllerBase
     [HttpPost]
     public Campaigns Post([FromBody] Campaigns campaignToCreate)
     {
-        return _campaignManager.Create(campaignToCreate.Name, campaignToCreateType, campaignToCreate.Description);
+        return _campaignManager.Create(campaignToCreate.Name, campaignToCreate.Type, campaignToCreate.Description);
     }
 
     [HttpDelete]
