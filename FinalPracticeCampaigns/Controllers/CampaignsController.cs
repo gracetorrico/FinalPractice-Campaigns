@@ -23,28 +23,42 @@ public class CampaignsController : ControllerBase
 
     [HttpGet]
     [Route("{id}")]
-    public Campaigns GetById([FromRoute] int id)
+    public Campaigns GetId([FromRoute] int id)
     {
-        return _campaignManager.GetById();
+        return _campaignManager.GetById(id);
     }
 
     [HttpPut]
     [Route("{id}")]
-    public Campaigns Put([FromRoute] int id, [FromBody] Campaigns patientToUpdate)
+    public Campaigns Put([FromRoute] int id, [FromBody] Campaigns CampaignUpdate)
     {
-        return _campaignManager.Update();
+        return _campaignManager.Update(id, CampaignUpdate);
+    }
+
+    [HttpPut]
+    [Route("{id}/enable")]
+    public Campaigns Enable([FromRoute] int id)
+    {
+        return _campaignManager.Enable(id);
+    }
+
+    [HttpPut]
+    [Route("{id}/disable")]
+    public Campaigns Disable([FromRoute] int id)
+    {
+        return _campaignManager.Disable(id);
     }
     
     [HttpPost]
     public Campaigns Post([FromBody] Campaigns campaignToCreate)
     {
-        return _campaignManager.Create(campaignToCreate.Name, campaignToCreateType, campaignToCreate.Description);
+        return _campaignManager.Create(campaignToCreate.Name, campaignToCreate.Type, campaignToCreate.Description);
     }
 
     [HttpDelete]
     [Route("{id}")]
-    public Campaigns Delete([FromRoute] string name, string type)
+    public Campaigns Delete([FromRoute] int id)
     {
-        return _campaignManager.Delete();
+        return _campaignManager.Delete(id);
     }
 }

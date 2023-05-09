@@ -19,14 +19,66 @@ public class CampaignManager
         return _campaigns;
     }
 
-    public Campaigns GetById()
+    public Campaigns GetById(int id)
     {
-        return new Campaigns();
+        if (id<0)
+        {
+            throw new Exception("Id inválido");
+        }
+        Campaigns campaignFound = _campaigns.Find(campaing => campaing.Id == id);
+        if(campaignFound==null)
+        {
+            throw new Exception("“Campaign not found");
+        }
+        return campaignFound;
     }
 
-    public Campaigns Update()
+    public Campaigns Update(int id, Campaigns campaign)
     {
-        return new Campaigns();
+        if (id<0)
+        {
+            throw new Exception("CI inválido");
+        }
+        Campaigns campaignFound = _campaigns.Find(campaign => campaign.Id == id);
+        if (campaignFound ==null)
+        {
+            throw new Exception("Patient not found");
+        }
+        campaignFound.Name = campaign.Name;
+        campaignFound.Type = campaign.Type;
+        campaignFound.Description = campaign.Description;
+        //UpdateFile();
+        return campaignFound;
+    }
+
+    public Campaigns Enable(int id)
+    {
+        if (id<0)
+        {
+            throw new Exception("CI inválido");
+        }
+        Campaigns campaignFound = _campaigns.Find(campaign => campaign.Id == id);
+        if (campaignFound ==null)
+        {
+            throw new Exception("Patient not found");
+        }
+        campaignFound.Enable = true;
+        return campaignFound;
+    }
+
+    public Campaigns Disable(int id)
+    {
+        if (id<0)
+        {
+            throw new Exception("CI inválido");
+        }
+        Campaigns campaignFound = _campaigns.Find(campaign => campaign.Id == id);
+        if (campaignFound ==null)
+        {
+            throw new Exception("Patient not found");
+        }
+        campaignFound.Enable = false;
+        return campaignFound;
     }
 
     public Campaigns Create(string name, string type, string description)
@@ -52,11 +104,16 @@ public class CampaignManager
         return campaign;
     }
 
-    public Campaigns Delete(string name, string type)
+    public Campaigns Delete(int id)
     {
-        int campaignsToDeleteIndex = _campaigns.FindIndex(campaigns => campaigns.Name == name && campaigns.Type == type);
+        int campaignsToDeleteIndex = _campaigns.FindIndex(campaigns => campaigns.Id == id);
+        if (campaignsToDeleteIndex==-1)
+        {
+            throw new Exception("CI inválido");
+        }
         Campaigns campaignsToDelete = _campaigns[campaignsToDeleteIndex];
         _campaigns.RemoveAt(campaignsToDeleteIndex);
+        //UpdateFile();
         return campaignsToDelete;
     }
 
