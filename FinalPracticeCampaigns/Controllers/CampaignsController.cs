@@ -11,8 +11,7 @@ public class CampaignsController : ControllerBase
     private readonly CampaignManager _campaignManager;
     public CampaignsController(CampaignManager campaignManager)
     {
-        _campaignManager= campaignManager; 
-        _campaignManager.Init();
+        _campaignManager= campaignManager;
     }
 
     [HttpGet]

@@ -8,17 +8,41 @@ namespace UPB.CoreLogic.Managers;
 public class CampaignManager
 {
     private List<Campaigns> _campaigns;
-    private string _json;
-    private static int _idCounter = 0;
+    private readonly string _jsonFilePath;
+    private static int _idCounter;
     
     public CampaignManager()
     {
         _campaigns = new List<Campaigns>();
-        _json = "..\\campaigns.json";
+        _jsonFilePath = "..\\campaigns.json";
+        Init();
+
     }
 
     public List<Campaigns> Init()
     {
+        if (!File.Exists(_jsonFilePath))
+        {
+            _idCounter = 0;
+            return new List<Campaigns>();
+        }
+
+        var json = File.ReadAllText(_jsonFilePath);
+        if (string.IsNullOrEmpty(json))
+        {
+            _idCounter = 0;
+            return new List<Campaigns>();
+        }
+
+        try
+        {
+            _campaigns = JsonConvert.DeserializeObject<List<Campaigns>>(json);
+            _idCounter = _campaigns.Last().Id;
+        }
+        catch (JsonException ex)
+        {
+            throw new Exception("Error al cargar los pacientes desde el archivo JSON.", ex);
+        }
         return _campaigns;
     }
     public List<Campaigns> GetAll()
@@ -54,7 +78,7 @@ public class CampaignManager
         campaignFound.Name = campaign.Name;
         campaignFound.Type = campaign.Type;
         campaignFound.Description = campaign.Description;
-        //UpdateFile();
+        UpdateFile();
         return campaignFound;
     }
 
@@ -70,6 +94,7 @@ public class CampaignManager
             throw new Exception("Patient not found");
         }
         campaignFound.Enable = true;
+        UpdateFile();
         return campaignFound;
     }
 
@@ -85,6 +110,7 @@ public class CampaignManager
             throw new Exception("Patient not found");
         }
         campaignFound.Enable = false;
+        UpdateFile();
         return campaignFound;
     }
 
@@ -110,15 +136,7 @@ public class CampaignManager
             throw new Exception(e.Message);
         }
         _campaigns.Add(campaign);
-
-
-        //reading all the json file to add a new line
-        string json = File.ReadAllText(_json);
-
-        // serializing created object and adding to the json file
-        json += "\n"+ JsonConvert.SerializeObject(campaign);
-        File.WriteAllText(_json, json);
-
+        UpdateFile();
         return campaign;
     }
 
@@ -131,8 +149,13 @@ public class CampaignManager
         }
         Campaigns campaignsToDelete = _campaigns[campaignsToDeleteIndex];
         _campaigns.RemoveAt(campaignsToDeleteIndex);
-        //UpdateFile();
+        UpdateFile();
         return campaignsToDelete;
+    }
+    public void UpdateFile()
+    {
+        var json = JsonConvert.SerializeObject(_campaigns);
+        File.WriteAllText(_jsonFilePath, json);
     }
 
 }

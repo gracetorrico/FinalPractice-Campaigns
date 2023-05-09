@@ -28,7 +28,7 @@ Log.Logger = loggerConfiguration.CreateBootstrapLogger();
 builder.Host.UseSerilog();
 
 // Add services to the container.(Servicios)
-builder.Services.AddSingleton<CampaignManager>();
+builder.Services.AddTransient<CampaignManager>();
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 
