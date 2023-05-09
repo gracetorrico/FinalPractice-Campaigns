@@ -4,6 +4,7 @@ namespace UPB.CoreLogic.Managers;
 public class CampaignManager
 {
     private List<Campaigns> _campaigns;
+    private static int _idCounter = 0;
     
     public CampaignManager()
     {
@@ -81,7 +82,7 @@ public class CampaignManager
         return campaignFound;
     }
 
-    public Campaigns Create(string name, string type, string description)
+    public Campaigns Create(int id, string name, string type, string description)
     {
         Campaigns campaign; 
 
@@ -95,6 +96,8 @@ public class CampaignManager
                 Enable = false,
                 RestaurantPartner = null
             };
+
+            campaign.Id = Interlocked.Increment(ref _idCounter);
         }
         catch (System.Exception e)
         {

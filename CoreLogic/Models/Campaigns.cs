@@ -1,5 +1,6 @@
 namespace UPB.CoreLogic.Models;
 
+
 public class Campaigns
 {
     public int Id {get; set;}
