@@ -3,7 +3,7 @@ namespace UPB.CoreLogic.Models;
 
 public class Campaigns
 {
-    public Guid Id {get; set;}//Guid
+    public Guid Id {get; set;}
     public String? Name { get; set; }
     public String? Type { get; set; }
     public String? Description { get; set; }

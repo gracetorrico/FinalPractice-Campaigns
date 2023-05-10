@@ -50,17 +50,18 @@ public class CampaignsController : ControllerBase
 
     [HttpPut]
     [Route("{id}/search-partners")]
-    public void searchPartner([FromRoute] Guid id)
+    public void SearchPartners([FromRoute] Guid id)
     {
         _campaignManager.SearchPartners(id);
     }
-    //search for all campaigns
+
     [HttpPut]
     [Route("active/search-partners")]
-    public void searchActivePartners()
+    public void SearchActivePartners()
     {
-        //_campaignManager.SearchPartners(id);
+        _campaignManager.SearchActivePartners();
     }
+    
     [HttpPost]
     public Campaigns Post([FromBody] Campaigns campaignToCreate)
     {
