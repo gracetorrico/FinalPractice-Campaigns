@@ -315,3 +315,58 @@
 2023-05-09 12:13:59.118 -04:00 [INF] Executed endpoint 'FinalPracticeCampaigns.Controllers.CampaignsController.Get (FinalPracticeCampaigns)'
 2023-05-09 12:13:59.120 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5277/campaigns - - - 200 - application/json;+charset=utf-8 19.5950ms
 2023-05-09 12:14:05.252 -04:00 [INF] Application is shutting down...
+2023-05-09 20:01:41.531 -04:00 [INF] Now listening on: http://localhost:5277
+2023-05-09 20:01:41.616 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-09 20:01:41.620 -04:00 [INF] Hosting environment: Development
+2023-05-09 20:01:41.622 -04:00 [INF] Content root path: E:\UPB\2023\CertificaciónI\Tercer Parcial\FinalPractice\repo-finalpractice\FinalPracticeCampaigns\
+2023-05-09 20:01:46.822 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5277/swagger/index.html - -
+2023-05-09 20:01:46.948 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5277/swagger/index.html - - - 200 - text/html;charset=utf-8 128.7446ms
+2023-05-09 20:01:47.288 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5277/swagger/v1/swagger.json - -
+2023-05-09 20:01:47.498 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5277/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 209.9024ms
+2023-05-09 20:01:52.940 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5277/campaigns - -
+2023-05-09 20:01:52.947 -04:00 [INF] Executing endpoint 'FinalPracticeCampaigns.Controllers.CampaignsController.Get (FinalPracticeCampaigns)'
+2023-05-09 20:01:52.962 -04:00 [INF] Route matched with {action = "Get", controller = "Campaigns"}. Executing controller action with signature System.Collections.Generic.List`1[UPB.CoreLogic.Models.Campaigns] Get() on controller FinalPracticeCampaigns.Controllers.CampaignsController (FinalPracticeCampaigns).
+2023-05-09 20:01:53.205 -04:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[UPB.CoreLogic.Models.Campaigns, CoreLogic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-05-09 20:01:53.219 -04:00 [INF] Executed action FinalPracticeCampaigns.Controllers.CampaignsController.Get (FinalPracticeCampaigns) in 244.3221ms
+2023-05-09 20:01:53.227 -04:00 [INF] Executed endpoint 'FinalPracticeCampaigns.Controllers.CampaignsController.Get (FinalPracticeCampaigns)'
+2023-05-09 20:01:53.231 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5277/campaigns - - - 200 - application/json;+charset=utf-8 290.8370ms
+2023-05-09 20:02:11.276 -04:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5277/campaigns/3/enable - 0
+2023-05-09 20:02:11.287 -04:00 [INF] Executing endpoint 'FinalPracticeCampaigns.Controllers.CampaignsController.Enable (FinalPracticeCampaigns)'
+2023-05-09 20:02:11.304 -04:00 [INF] Route matched with {action = "Enable", controller = "Campaigns"}. Executing controller action with signature UPB.CoreLogic.Models.Campaigns Enable(Int32) on controller FinalPracticeCampaigns.Controllers.CampaignsController (FinalPracticeCampaigns).
+2023-05-09 20:02:11.344 -04:00 [INF] Executing ObjectResult, writing value of type 'UPB.CoreLogic.Models.Campaigns'.
+2023-05-09 20:02:11.349 -04:00 [INF] Executed action FinalPracticeCampaigns.Controllers.CampaignsController.Enable (FinalPracticeCampaigns) in 37.9667ms
+2023-05-09 20:02:11.351 -04:00 [INF] Executed endpoint 'FinalPracticeCampaigns.Controllers.CampaignsController.Enable (FinalPracticeCampaigns)'
+2023-05-09 20:02:11.352 -04:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5277/campaigns/3/enable - 0 - 200 - application/json;+charset=utf-8 76.3927ms
+2023-05-09 20:02:22.771 -04:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5277/campaigns/3/search-partners - 0
+2023-05-09 20:02:22.774 -04:00 [INF] Executing endpoint 'FinalPracticeCampaigns.Controllers.CampaignsController.searchPartner (FinalPracticeCampaigns)'
+2023-05-09 20:02:22.780 -04:00 [INF] Route matched with {action = "searchPartner", controller = "Campaigns"}. Executing controller action with signature Void searchPartner(Int32) on controller FinalPracticeCampaigns.Controllers.CampaignsController (FinalPracticeCampaigns).
+2023-05-09 20:02:22.845 -04:00 [INF] Executed action FinalPracticeCampaigns.Controllers.CampaignsController.searchPartner (FinalPracticeCampaigns) in 58.4072ms
+2023-05-09 20:02:22.849 -04:00 [INF] Executed endpoint 'FinalPracticeCampaigns.Controllers.CampaignsController.searchPartner (FinalPracticeCampaigns)'
+2023-05-09 20:02:22.853 -04:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5277/campaigns/3/search-partners - 0 - 200 0 - 82.3443ms
+2023-05-09 20:02:27.397 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5277/campaigns - -
+2023-05-09 20:02:27.400 -04:00 [INF] Executing endpoint 'FinalPracticeCampaigns.Controllers.CampaignsController.Get (FinalPracticeCampaigns)'
+2023-05-09 20:02:27.410 -04:00 [INF] Route matched with {action = "Get", controller = "Campaigns"}. Executing controller action with signature System.Collections.Generic.List`1[UPB.CoreLogic.Models.Campaigns] Get() on controller FinalPracticeCampaigns.Controllers.CampaignsController (FinalPracticeCampaigns).
+2023-05-09 20:02:27.417 -04:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[UPB.CoreLogic.Models.Campaigns, CoreLogic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-05-09 20:02:27.423 -04:00 [INF] Executed action FinalPracticeCampaigns.Controllers.CampaignsController.Get (FinalPracticeCampaigns) in 6.4901ms
+2023-05-09 20:02:27.427 -04:00 [INF] Executed endpoint 'FinalPracticeCampaigns.Controllers.CampaignsController.Get (FinalPracticeCampaigns)'
+2023-05-09 20:02:27.429 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5277/campaigns - - - 200 - application/json;+charset=utf-8 31.1581ms
+2023-05-09 20:02:41.730 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5277/campaigns - -
+2023-05-09 20:02:41.732 -04:00 [INF] Executing endpoint 'FinalPracticeCampaigns.Controllers.CampaignsController.Get (FinalPracticeCampaigns)'
+2023-05-09 20:02:41.736 -04:00 [INF] Route matched with {action = "Get", controller = "Campaigns"}. Executing controller action with signature System.Collections.Generic.List`1[UPB.CoreLogic.Models.Campaigns] Get() on controller FinalPracticeCampaigns.Controllers.CampaignsController (FinalPracticeCampaigns).
+2023-05-09 20:02:41.742 -04:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[UPB.CoreLogic.Models.Campaigns, CoreLogic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-05-09 20:02:41.747 -04:00 [INF] Executed action FinalPracticeCampaigns.Controllers.CampaignsController.Get (FinalPracticeCampaigns) in 5.3372ms
+2023-05-09 20:02:41.751 -04:00 [INF] Executed endpoint 'FinalPracticeCampaigns.Controllers.CampaignsController.Get (FinalPracticeCampaigns)'
+2023-05-09 20:02:41.755 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5277/campaigns - - - 200 - application/json;+charset=utf-8 24.5731ms
+2023-05-09 20:02:47.258 -04:00 [INF] Request starting HTTP/1.1 PUT http://localhost:5277/campaigns/3/search-partners - 0
+2023-05-09 20:02:47.261 -04:00 [INF] Executing endpoint 'FinalPracticeCampaigns.Controllers.CampaignsController.searchPartner (FinalPracticeCampaigns)'
+2023-05-09 20:02:47.263 -04:00 [INF] Route matched with {action = "searchPartner", controller = "Campaigns"}. Executing controller action with signature Void searchPartner(Int32) on controller FinalPracticeCampaigns.Controllers.CampaignsController (FinalPracticeCampaigns).
+2023-05-09 20:02:47.271 -04:00 [INF] Executed action FinalPracticeCampaigns.Controllers.CampaignsController.searchPartner (FinalPracticeCampaigns) in 1.7228ms
+2023-05-09 20:02:47.276 -04:00 [INF] Executed endpoint 'FinalPracticeCampaigns.Controllers.CampaignsController.searchPartner (FinalPracticeCampaigns)'
+2023-05-09 20:02:47.278 -04:00 [INF] Request finished HTTP/1.1 PUT http://localhost:5277/campaigns/3/search-partners - 0 - 200 0 - 20.3064ms
+2023-05-09 20:02:56.949 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5277/campaigns - -
+2023-05-09 20:02:56.951 -04:00 [INF] Executing endpoint 'FinalPracticeCampaigns.Controllers.CampaignsController.Get (FinalPracticeCampaigns)'
+2023-05-09 20:02:56.954 -04:00 [INF] Route matched with {action = "Get", controller = "Campaigns"}. Executing controller action with signature System.Collections.Generic.List`1[UPB.CoreLogic.Models.Campaigns] Get() on controller FinalPracticeCampaigns.Controllers.CampaignsController (FinalPracticeCampaigns).
+2023-05-09 20:02:56.959 -04:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[UPB.CoreLogic.Models.Campaigns, CoreLogic, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2023-05-09 20:02:56.964 -04:00 [INF] Executed action FinalPracticeCampaigns.Controllers.CampaignsController.Get (FinalPracticeCampaigns) in 4.9975ms
+2023-05-09 20:02:56.968 -04:00 [INF] Executed endpoint 'FinalPracticeCampaigns.Controllers.CampaignsController.Get (FinalPracticeCampaigns)'
+2023-05-09 20:02:56.971 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5277/campaigns - - - 200 - application/json;+charset=utf-8 21.6779ms

@@ -8,5 +8,5 @@ public class Campaigns
     public String? Type { get; set; }
     public String? Description { get; set; }
     public Boolean Enable {get; set;}
-    public object? RestaurantPartner {get; set;}
+    public RestaurantPartner? RestaurantPartner {get; set;}
 }

@@ -59,7 +59,7 @@ public class CampaignManager
         Campaigns campaignFound = _campaigns.Find(campaing => campaing.Id == id);
         if(campaignFound==null)
         {
-            throw new Exception("“Campaign not found");
+            throw new Exception("Campaign not found");
         }
         return campaignFound;
     }
@@ -73,7 +73,7 @@ public class CampaignManager
         Campaigns campaignFound = _campaigns.Find(campaign => campaign.Id == id);
         if (campaignFound ==null)
         {
-            throw new Exception("Patient not found");
+            throw new Exception("Campaign not found");
         }
         campaignFound.Name = campaign.Name;
         campaignFound.Type = campaign.Type;
@@ -91,7 +91,7 @@ public class CampaignManager
         Campaigns campaignFound = _campaigns.Find(campaign => campaign.Id == id);
         if (campaignFound ==null)
         {
-            throw new Exception("Patient not found");
+            throw new Exception("Campaign not found");
         }
         campaignFound.Enable = true;
         UpdateFile();
@@ -107,7 +107,7 @@ public class CampaignManager
         Campaigns campaignFound = _campaigns.Find(campaign => campaign.Id == id);
         if (campaignFound ==null)
         {
-            throw new Exception("Patient not found");
+            throw new Exception("Campaign not found");
         }
         campaignFound.Enable = false;
         UpdateFile();
@@ -157,5 +157,58 @@ public class CampaignManager
         var json = JsonConvert.SerializeObject(_campaigns);
         File.WriteAllText(_jsonFilePath, json);
     }
+
+    public async Task<RestaurantPartner> SearchPartners(int id)
+    {
+        using (var httpClient = new HttpClient())
+        {
+            var response = await httpClient.GetAsync("https://random-data-api.com/api/restaurant/random_restaurant");
+            if (!response.IsSuccessStatusCode)
+            {
+                throw new Exception("Error al buscar auspiciador");
+            }
+
+            var json = await response.Content.ReadAsStringAsync();
+            var restaurantPartner = JsonConvert.DeserializeObject<RestaurantPartner>(json);
+
+            Campaigns campaignFound = _campaigns.Find(campaign => campaign.Id == id);
+            if (campaignFound ==null)
+            {
+                throw new Exception("Campaign Not found");
+            }
+            if(campaignFound.Enable)
+            {
+                campaignFound.RestaurantPartner = new RestaurantPartner()
+                {
+                    Id = restaurantPartner.Id,
+                    Name = restaurantPartner.Name,
+                    Description = restaurantPartner.Description,
+                    PhoneNumber = restaurantPartner.PhoneNumber
+                };
+            }
+            
+
+            /*
+            var activeCampaigns = _campaigns.Where(c => c.Enable);
+            if (!activeCampaigns.Any())
+            {
+                throw new Exception("No hay campañas activas");
+            }
+
+            var random = new Random();
+            var campaign = activeCampaigns.ElementAt(random.Next(activeCampaigns.Count()));
+            campaign.RestaurantPartner = new RestaurantPartner()
+            {
+                Name = restaurantPartner.Name,
+                Description = restaurantPartner.Description,
+                PhoneNumber = restaurantPartner.PhoneNumber
+            };*/
+
+            UpdateFile();
+
+            return campaignFound.RestaurantPartner;
+        }
+    }
+
 
 }
