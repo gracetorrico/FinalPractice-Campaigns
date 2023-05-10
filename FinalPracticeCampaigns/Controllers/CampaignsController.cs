@@ -22,48 +22,54 @@ public class CampaignsController : ControllerBase
 
     [HttpGet]
     [Route("{id}")]
-    public Campaigns GetId([FromRoute] int id)
+    public Campaigns GetId([FromRoute] Guid id)
     {
         return _campaignManager.GetById(id);
     }
 
     [HttpPut]
     [Route("{id}")]
-    public Campaigns Put([FromRoute] int id, [FromBody] Campaigns CampaignUpdate)
+    public Campaigns Put([FromRoute] Guid id, [FromBody] Campaigns CampaignUpdate)
     {
         return _campaignManager.Update(id, CampaignUpdate);
     }
 
     [HttpPut]
     [Route("{id}/enable")]
-    public Campaigns Enable([FromRoute] int id)
+    public Campaigns Enable([FromRoute] Guid id)
     {
         return _campaignManager.Enable(id);
     }
 
     [HttpPut]
     [Route("{id}/disable")]
-    public Campaigns Disable([FromRoute] int id)
+    public Campaigns Disable([FromRoute] Guid id)
     {
         return _campaignManager.Disable(id);
     }
 
     [HttpPut]
     [Route("{id}/search-partners")]
-    public void searchPartner([FromRoute] int id)
+    public void searchPartner([FromRoute] Guid id)
     {
         _campaignManager.SearchPartners(id);
     }
-    
+    //search for all campaigns
+    [HttpPut]
+    [Route("active/search-partners")]
+    public void searchActivePartners()
+    {
+        //_campaignManager.SearchPartners(id);
+    }
     [HttpPost]
     public Campaigns Post([FromBody] Campaigns campaignToCreate)
     {
-        return _campaignManager.Create(campaignToCreate.Id,campaignToCreate.Name, campaignToCreate.Type, campaignToCreate.Description);
+        return _campaignManager.Create(campaignToCreate.Name, campaignToCreate.Type, campaignToCreate.Description);
     }
 
     [HttpDelete]
     [Route("{id}")]
-    public Campaigns Delete([FromRoute] int id)
+    public Campaigns Delete([FromRoute] Guid id)
     {
         return _campaignManager.Delete(id);
     }

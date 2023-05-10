@@ -370,3 +370,4 @@
 2023-05-09 20:02:56.964 -04:00 [INF] Executed action FinalPracticeCampaigns.Controllers.CampaignsController.Get (FinalPracticeCampaigns) in 4.9975ms
 2023-05-09 20:02:56.968 -04:00 [INF] Executed endpoint 'FinalPracticeCampaigns.Controllers.CampaignsController.Get (FinalPracticeCampaigns)'
 2023-05-09 20:02:56.971 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5277/campaigns - - - 200 - application/json;+charset=utf-8 21.6779ms
+2023-05-09 20:50:11.912 -04:00 [INF] Application is shutting down...
