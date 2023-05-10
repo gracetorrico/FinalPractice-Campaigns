@@ -37,7 +37,7 @@ public class CampaignManager
         try
         {
             _campaigns = JsonConvert.DeserializeObject<List<Campaigns>>(json);
-            _idCounter = _campaigns.Last().Id;
+            //_idCounter = _campaigns.Last().Id;
         }
         catch (JsonException ex)
         {
@@ -50,9 +50,9 @@ public class CampaignManager
         return _campaigns;
     }
 
-    public Campaigns GetById(int id)
+    public Campaigns GetById(Guid id)
     {
-        if (id<0)
+        if (id==Guid.Empty)
         {
             throw new Exception("Id inválido");
         }
@@ -64,9 +64,9 @@ public class CampaignManager
         return campaignFound;
     }
 
-    public Campaigns Update(int id, Campaigns campaign)
+    public Campaigns Update(Guid id, Campaigns campaign)
     {
-        if (id<0)
+        if (id==Guid.Empty)
         {
             throw new Exception("CI inválido");
         }
@@ -82,9 +82,9 @@ public class CampaignManager
         return campaignFound;
     }
 
-    public Campaigns Enable(int id)
+    public Campaigns Enable(Guid id)
     {
-        if (id<0)
+        if (id==Guid.Empty)
         {
             throw new Exception("CI inválido");
         }
@@ -98,9 +98,9 @@ public class CampaignManager
         return campaignFound;
     }
 
-    public Campaigns Disable(int id)
+    public Campaigns Disable(Guid id)
     {
-        if (id<0)
+        if (id==Guid.Empty)
         {
             throw new Exception("CI inválido");
         }
@@ -114,7 +114,7 @@ public class CampaignManager
         return campaignFound;
     }
 
-    public Campaigns Create(int id, string name, string type, string description)
+    public Campaigns Create(string name, string type, string description)
     {
         Campaigns campaign; 
 
@@ -129,7 +129,8 @@ public class CampaignManager
                 RestaurantPartner = null
             };
 
-            campaign.Id = Interlocked.Increment(ref _idCounter);
+            //campaign.Id = Interlocked.Increment(ref _idCounter);
+            campaign.Id = Guid.NewGuid();
         }
         catch (System.Exception e)
         {
@@ -140,7 +141,7 @@ public class CampaignManager
         return campaign;
     }
 
-    public Campaigns Delete(int id)
+    public Campaigns Delete(Guid id)
     {
         int campaignsToDeleteIndex = _campaigns.FindIndex(campaigns => campaigns.Id == id);
         if (campaignsToDeleteIndex==-1)
@@ -158,7 +159,7 @@ public class CampaignManager
         File.WriteAllText(_jsonFilePath, json);
     }
 
-    public async Task<RestaurantPartner> SearchPartners(int id)
+    public async Task<RestaurantPartner> SearchPartners(Guid id)
     {
         using (var httpClient = new HttpClient())
         {
@@ -185,23 +186,40 @@ public class CampaignManager
                     PhoneNumber = restaurantPartner.PhoneNumber
                 };
             }
-            /*
+            UpdateFile();
+            return campaignFound.RestaurantPartner;
+        }
+    }
+
+    public async Task<RestaurantPartner> SearchActivePartners()
+    {
+        using (var httpClient = new HttpClient())
+        {
+            var response = await httpClient.GetAsync("https://random-data-api.com/api/restaurant/random_restaurant");
+            if (!response.IsSuccessStatusCode)
+            {
+                throw new Exception("Error al buscar auspiciador");
+            }
+
+            var json = await response.Content.ReadAsStringAsync();
+            var restaurantPartner = JsonConvert.DeserializeObject<RestaurantPartner>(json);
             var activeCampaigns = _campaigns.Where(c => c.Enable);
             if (!activeCampaigns.Any())
             {
                 throw new Exception("No hay campañas activas");
             }
-            var random = new Random();
-            var campaign = activeCampaigns.ElementAt(random.Next(activeCampaigns.Count()));
-            campaign.RestaurantPartner = new RestaurantPartner()
+            foreach(Campaigns c in activeCampaigns)
             {
-                Name = restaurantPartner.Name,
-                Description = restaurantPartner.Description,
-                PhoneNumber = restaurantPartner.PhoneNumber
-            };*/
+                c.RestaurantPartner = new RestaurantPartner()
+                {
+                    Name = restaurantPartner.Name,
+                    Description = restaurantPartner.Description,
+                    PhoneNumber = restaurantPartner.PhoneNumber
+                };
+            }
 
             UpdateFile();
-            return campaignFound.RestaurantPartner;
+            return restaurantPartner;
         }
     }
 
