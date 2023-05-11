@@ -1,0 +1,32 @@
+2023-05-08 08:52:11.604 -04:00 [INF] Now listening on: http://localhost:5277
+2023-05-08 08:52:11.652 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-08 08:52:11.655 -04:00 [INF] Hosting environment: Development
+2023-05-08 08:52:11.657 -04:00 [INF] Content root path: E:\UPB\2023\CertificaciónI\Tercer Parcial\FinalPractice\repo-finalpractice\FinalPracticeCampaigns\
+2023-05-08 08:52:33.532 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5277/swagger/swagger-ui-standalone-preset.js - -
+2023-05-08 08:52:33.532 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5277/swagger/swagger-ui-bundle.js - -
+2023-05-08 08:52:34.010 -04:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2023-05-08 08:52:34.043 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5277/swagger/swagger-ui-standalone-preset.js - - - 200 312163 application/javascript 517.2173ms
+2023-05-08 08:52:34.053 -04:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2023-05-08 08:52:34.064 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5277/swagger/swagger-ui-bundle.js - - - 200 1061536 application/javascript 544.8243ms
+2023-05-08 08:52:34.320 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5277/swagger/v1/swagger.json - -
+2023-05-08 08:52:34.492 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5277/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 172.7124ms
+2023-05-08 08:52:36.509 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5277/swagger/index.html - -
+2023-05-08 08:52:36.705 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5277/swagger/index.html - - - 200 - text/html;charset=utf-8 195.8629ms
+2023-05-08 08:52:36.801 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5277/swagger/v1/swagger.json - -
+2023-05-08 08:52:36.807 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5277/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 5.4575ms
+2023-05-08 08:52:42.938 -04:00 [INF] Application is shutting down...
+2023-05-08 09:20:57.247 -04:00 [INF] Now listening on: http://localhost:5277
+2023-05-08 09:20:57.302 -04:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-05-08 09:20:57.306 -04:00 [INF] Hosting environment: Development
+2023-05-08 09:20:57.310 -04:00 [INF] Content root path: E:\UPB\2023\CertificaciónI\Tercer Parcial\FinalPractice\repo-finalpractice\FinalPracticeCampaigns\
+2023-05-08 09:21:11.301 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5277/swagger - -
+2023-05-08 09:21:11.433 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5277/swagger - - - 301 0 - 142.5433ms
+2023-05-08 09:21:11.445 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5277/swagger/index.html - -
+2023-05-08 09:21:11.552 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5277/swagger/index.html - - - 200 - text/html;charset=utf-8 107.3979ms
+2023-05-08 09:21:11.659 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5277/swagger/v1/swagger.json - -
+2023-05-08 09:21:11.838 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5277/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 178.1562ms
+2023-05-08 09:21:16.436 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5277/swagger/index.html - -
+2023-05-08 09:21:16.447 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5277/swagger/index.html - - - 200 - text/html;charset=utf-8 10.9208ms
+2023-05-08 09:21:16.639 -04:00 [INF] Request starting HTTP/1.1 GET http://localhost:5277/swagger/v1/swagger.json - -
+2023-05-08 09:21:16.648 -04:00 [INF] Request finished HTTP/1.1 GET http://localhost:5277/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 8.4805ms
+2023-05-08 09:21:20.377 -04:00 [INF] Application is shutting down...
